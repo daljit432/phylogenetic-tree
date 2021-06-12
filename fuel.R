@@ -24,5 +24,6 @@ print(distance, digits = 9)
 hc <- hclust(distance, "ave")
 plot(hc, labels = GD$displacement)
 
+library("dendroxtras")
 clust1 <- color_clusters(hclust(distance), 5)
 plot(clust1)
